@@ -34,3 +34,17 @@ toggle.addEventListener('change', handleToggleChange);
 
 // Initialize popup UI on load
 document.addEventListener('DOMContentLoaded', loadState);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('hideShorts');
+
+  // Load current state
+  chrome.storage.sync.get(['hideShorts'], (result) => {
+    toggle.checked = result.hideShorts || false;
+  });
+
+  // Save state on change
+  toggle.addEventListener('change', () => {
+    chrome.storage.sync.set({ hideShorts: toggle.checked });
+  });
+});

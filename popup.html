@@ -1,38 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>FocusTube</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="card">
-    <div class="header">
-      <div class="icon">
-        <img src="icons/focusTube icon.png" alt="FocusTube" style="width: 28px; height: 28px; display: block; border-radius: 8px; background: none;" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>FocusTube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <div class="icon">
+          <img
+            src="icons/focusTube icon.png"
+            alt="FocusTube"
+            style="
+              width: 28px;
+              height: 28px;
+              display: block;
+              border-radius: 8px;
+              background: none;
+            "
+          />
+        </div>
+        <h1 class="title">FocusTube</h1>
       </div>
-      <h1 class="title">FocusTube</h1>
-    </div>
-    <p class="subtitle">Enhanced YouTube Focus Experience</p>
-    
-    <div class="switch-wrapper">
-      <label class="switch">
-        <input type="checkbox" id="toggle" />
-        <span class="slider"></span>
-      </label>
-    </div>
-    
-    <div class="status" id="statusText">Loading...</div>
+      <p class="subtitle">Enhanced YouTube Focus Experience</p>
 
-    <a
-      href="https://github.com/nknaleena101/FocusTube"
-      class="github-link"
-      target="_blank"
-    >
-      View on GitHub
-    </a>
-  </div>
+      <div class="switch-wrapper">
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+        <label> <input type="checkbox" id="hideShorts" /> Hide Shorts </label>
+      </div>
 
-  <script src="popup.js"></script>
-</body>
+      <div class="status" id="statusText">Loading...</div>
+
+      <a
+        href="https://github.com/nknaleena101/FocusTube"
+        class="github-link"
+        target="_blank"
+      >
+        View on GitHub
+      </a>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>

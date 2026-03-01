@@ -26,11 +26,20 @@
       <p class="subtitle">Enhanced YouTube Focus Experience</p>
 
       <div class="switch-wrapper">
-        <label class="switch">
-          <input type="checkbox" id="toggle" />
-          <span class="slider"></span>
-        </label>
-        <label> <input type="checkbox" id="hideShorts" /> Hide Shorts </label>
+        <div class="switch-row">
+          <label class="switch">
+            <input type="checkbox" id="toggle" />
+            <span class="slider"></span>
+          </label>
+          <label for="toggle" class="switch-label">Focus Mode</label>
+        </div>
+        <div class="switch-row">
+          <label class="switch">
+            <input type="checkbox" id="hideShorts" />
+            <span class="slider"></span>
+          </label>
+          <label for="hideShorts" class="switch-label">Hide Shorts</label>
+        </div>
       </div>
 
       <div class="status" id="statusText">Loading...</div>

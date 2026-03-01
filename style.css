@@ -104,15 +104,23 @@ body {
     .switch-wrapper {
       margin: 24px auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
       gap: 16px;
+      width: fit-content;
+    }
+
+    .switch-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
     }
 
     .switch-label {
       font-size: 14px;
       font-weight: 500;
       color: #e4e4e7;
+      cursor: pointer;
     }
 
     .switch {
